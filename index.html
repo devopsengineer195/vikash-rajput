@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikash Rajput | Leadership Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* Animated Background */
+body::before{
+    content:'';
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:rgba(255,255,255,0.05);
+    border-radius:50%;
+    top:-200px;
+    left:-200px;
+    animation:float 8s infinite ease-in-out;
+}
+
+body::after{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(255,255,255,0.04);
+    border-radius:50%;
+    bottom:-150px;
+    right:-150px;
+    animation:float 10s infinite ease-in-out;
+}
+
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(20px);}
+    100%{transform:translateY(0px);}
+}
+
+/* Main Card */
+
+.card{
+    position:relative;
+    width:420px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    padding:40px 30px;
+    text-align:center;
+    color:white;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.profile-icon{
+    width:100px;
+    height:100px;
+    background:linear-gradient(135deg,#f59e0b,#ef4444);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 20px;
+    font-size:40px;
+    font-weight:bold;
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.role{
+    color:#facc15;
+    font-size:18px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.company{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+p{
+    font-size:15px;
+    line-height:1.8;
+    color:#e2e8f0;
+    margin-bottom:15px;
+}
+
+.quote{
+    margin-top:20px;
+    padding:15px;
+    border-left:4px solid #facc15;
+    background:rgba(255,255,255,0.08);
+    border-radius:10px;
+    font-style:italic;
+    color:#f8fafc;
+}
+
+.badges{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.badge{
+    background:rgba(255,255,255,0.12);
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:13px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.badge:hover{
+    background:#f59e0b;
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#cbd5e1;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="profile-icon">
+        VR
+    </div>
+
+    <h1>Vikash Rajput</h1>
+
+    <div class="role">
+        Project Management Professional
+    </div>
+
+    <p>
+        Working with 
+        <span class="company">Cavisson Systems, Noida</span>,
+        Vikash Rajput is recognized for his dedication,
+        leadership qualities, and strong commitment toward project excellence.
+    </p>
+
+    <p>
+        His hardworking nature, disciplined mindset,
+        and positive attitude make him one of the most trusted
+        and respected professionals in the organization.
+    </p>
+
+    <p>
+        Along with professional success, he is a spiritual
+        and value-driven individual who believes in honesty,
+        respect, and continuous growth.
+    </p>
+
+    <div class="quote">
+        “Success is not only about achieving goals,
+        it is about inspiring people through dedication,
+        discipline, and positive energy.”
+    </div>
+
+    <div class="badges">
+        <div class="badge">Leadership</div>
+        <div class="badge">Hardworking</div>
+        <div class="badge">Spiritual</div>
+        <div class="badge">Trusted</div>
+    </div>
+
+    <div class="footer">
+        Appreciated by Senior Management ⭐
+    </div>
+
+</div>
+
+</body>
+</html>
